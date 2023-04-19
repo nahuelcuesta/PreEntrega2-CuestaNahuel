@@ -377,19 +377,31 @@ legend {
 
 /*****GIFTCARD*/
 .contenedor-general-tarjeta {
+    width: 9    0%;
     grid-column: 1 /7;
-    grid-row: 2 / 7;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-row: 2 / 9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+    background-color: black;
+    margin: 1rem 0;
+    color: white;
 
 }
-
-.imagen-tarjeta-elegida {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    justify-self: center;
+.contenedor-general-tarjeta img {
+    align-self: center;
+    width: 500px;
 }
+.contenedor-general-tarjeta div {
+align-self: center;    
+}
+.contenedor-general-tarjeta p {
+    font-weight: 900;
+    font-size: 4rem;
+margin: 0;    
+    }
+
+
 
 .contenedor-derecho-tarjeta {
     grid-column: 2 / 3;
@@ -397,30 +409,28 @@ legend {
     justify-self: center;
 }
 
-.contenedor-general-tarjeta img {
-    width: 50%;
-}
-
 .contenedor-2-tarjeta {
     grid-column: 1 /7;
-    grid-row: 7 / 11;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-row: 9 / 11;  
+   
 }
 
-.contenedor-2-tarjeta img {
-    width: 50%;
+.tarjeta-individual {
+    width: 150px;
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
 }
 
 .contenedor-tarjetas {
     background-color: black;
     height: 8rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    justify-content: center;
-    align-items: center;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-evenly;   
+    padding: 10px;
+    
 }
 
 /*****NOSOTROS*/
@@ -476,48 +486,70 @@ legend {
     grid-column: 1 / 7;
     grid-row: 2 / 9;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
+    background-color: black;
     color: white;
 }
-
-.barra-negra-pagina-productos {
-    height: 70%;
-    grid-column: 1 / 5;
-    grid-row: 1 / 2;
-    background-color: black;
-    order: 0;
+.section-productos a{
+   text-decoration: none;
+   font-size: 1rem;
+   font-weight: 600;
+   background-color: black;
+   color: white;
+   border-radius: 30px;
+   padding: 10px;
 }
-
+.section-productos  h2{
+    font-size: 1.5rem;
+    font-weight: 900;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0.2rem;
+}
 .lista-caracteristicas {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    justify-self: center;
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column ;
     align-items: center;
+    justify-content: space-evenly;
+    background-color:white;
+    color: black;
+    margin: 1rem;
+    margin-left: 4rem;
+    padding: 2rem;
+    height: 70%;
+    
+    }
 
-}
 
 .imagen-catalogo {
-    width: 60%;
+    width: 80%;
     justify-self: center;
-    grid-column: 2 / 4;
+    grid-column: 2 / 3;
     grid-row: 1 / 2;
-}
+   }
 
 .consejo-producto {
-    grid-column: 4 / 5;
+    height: 70%;
+    grid-column: 3 / 4;
     grid-row: 1 / 2;
     justify-self: center;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
     align-items: center;
+    justify-content: space-evenly;
     padding: 2rem;
-    order: 1;
-
+    margin: 1rem;
+    margin-right: 4rem;
+    text-align: center;
+background-color: white;
+color: black;
 }
 
 /*****FOOTER*/
